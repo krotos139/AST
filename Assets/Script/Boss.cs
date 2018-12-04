@@ -5,6 +5,8 @@ using System.Linq;
 
 public class Boss : MonoBehaviour {
 
+    public GameObject audioBossDamage;
+    public GameObject audioBossDie;
     public GameObject fadeBlack;
     //public GameObject fadeLose;
     public Tentacle tentacle1;
@@ -35,38 +37,41 @@ public class Boss : MonoBehaviour {
         MusicManager musicManager = FindObjectOfType<MusicManager>();
         musicManager.StartLevel(1);
 
-        var objects = FindObjectsOfType<MouseDragAndDrop>();
-        foreach (MouseDragAndDrop ob in objects)
+        if (true)
         {
-            //Debug.Log("Staff=" + ob.name);
-
-            int index = 0;
-            bool found = false;
-            foreach (string name in CommonSingleton.staffNames)
+            var objects = FindObjectsOfType<MouseDragAndDrop>();
+            foreach (MouseDragAndDrop ob in objects)
             {
-                //Debug.Log("STAFF SINGLETON NAME : " + name);
-                if (name.Equals(ob.name))
+                //Debug.Log("Staff=" + ob.name);
+
+                int index = 0;
+                bool found = false;
+                foreach (string name in CommonSingleton.staffNames)
                 {
-                    found = true;
-                    //Debug.Log("FOUND");
-                    break;
+                    //Debug.Log("STAFF SINGLETON NAME : " + name);
+                    if (name.Equals(ob.name))
+                    {
+                        found = true;
+                        //Debug.Log("FOUND");
+                        break;
+                    }
+                    index++;
                 }
-                index++;
-            }
 
 
 
-            if (found)
-            {
+                if (found)
+                {
 
-                //Debug.Log("ALIVE staff!");
+                    //Debug.Log("ALIVE staff!");
 
-                //ob.transform.rotation = CommonSingleton.staffQuat.ElementAt<Quaternion>(index);
-                //ob.transform.position = CommonSingleton.staffPos.ElementAt<Vector2>(index);
-            }
-            else {
+                    //ob.transform.rotation = CommonSingleton.staffQuat.ElementAt<Quaternion>(index);
+                    //ob.transform.position = CommonSingleton.staffPos.ElementAt<Vector2>(index);
+                }
+                else {
 
-                Destroy(ob.gameObject);
+                    Destroy(ob.gameObject);
+                }
             }
         }
     }
@@ -142,7 +147,8 @@ public class Boss : MonoBehaviour {
     public void DeleteTentacle()
     {
         tentacleCount -= 1;
-        Debug.Log("DeleteTentacle (tentacleCount=" + tentacleCount + ")");
+        audioBossDamage.GetComponent<AudioSource>().Play();
+        //Debug.Log("DeleteTentacle (tentacleCount=" + tentacleCount + ")");
     }
 
     // Update is called once per frame

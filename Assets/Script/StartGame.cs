@@ -16,6 +16,7 @@ public class StartGame : MonoBehaviour {
 
     public void StartTheGame()
     {
+        CommonSingleton.level_index = 0;
         UnityEngine.SceneManagement.SceneManager.LoadScene("intro", UnityEngine.SceneManagement.LoadSceneMode.Single);
     }
 }
