@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 81cf2bd139dde9c4c991536eef685a4d
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BackCap
+    100002: //RootNode
+    100004: car_damage
+    100006: door003
+    100008: door004
+    100010: door01
+    100012: door02
+    100014: Kapot
+    100016: Object001
+    100018: Object002
+    100020: Object003
+    100022: Object004
+    400000: BackCap
+    400002: //RootNode
+    400004: car_damage
+    400006: door003
+    400008: door004
+    400010: door01
+    400012: door02
+    400014: Kapot
+    400016: Object001
+    400018: Object002
+    400020: Object003
+    400022: Object004
+    2300000: BackCap
+    2300002: car_damage
+    2300004: door003
+    2300006: door004
+    2300008: door01
+    2300010: door02
+    2300012: Kapot
+    2300014: Object001
+    2300016: Object002
+    2300018: Object003
+    2300020: Object004
+    3300000: BackCap
+    3300002: car_damage
+    3300004: door003
+    3300006: door004
+    3300008: door01
+    3300010: door02
+    3300012: Kapot
+    3300014: Object001
+    3300016: Object002
+    3300018: Object003
+    3300020: Object004
+    4300000: car_damage
+    4300002: Object001
+    4300004: door01
+    4300006: door02
+    4300008: door003
+    4300010: door004
+    4300012: Kapot
+    4300014: BackCap
+    4300016: Object002
+    4300018: Object003
+    4300020: Object004
+    6400000: BackCap
+    6400002: car_damage
+    6400004: door003
+    6400006: door004
+    6400008: door01
+    6400010: door02
+    6400012: Kapot
+    6400014: Object001
+    6400016: Object002
+    6400018: Object003
+    6400020: Object004
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0500000007
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 
